@@ -1,0 +1,31 @@
+/*
+Theme Name: Divi-Child
+Theme URI: http://www.elegantthemes.com/gallery/divi/
+Version: 3.22.7
+Template: Divi
+Author: Elegant Themes
+Author URI: http://www.elegantthemes.com
+License: GNU General Public License v2
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: Divi-Child
+*/
+.main-banner .et_pb_container{height:80vh !important;}
+.main-banner .et_pb_container .et_pb_button_wrapper{position: relative;}
+.main-banner .et_pb_container .et_pb_button{position: absolute;top: 150px;text-transform: uppercase;padding: 15px 30px;box-sizing: border-box;right: -170px;}
+#top-menu-nav #top-menu li{padding-right:45px;margin-top: 10px;}
+#et-top-navigation #et_top_search{width: 160px;margin-top:0;border:1px solid #aaa;padding:5px 10px}
+#et-top-navigation #et_top_search:before {content: "Search";}
+#et-top-navigation #et_top_search #et_search_icon:before{right: 7px;left: auto;top: 8px;font-size: 14px;font-weight: 700;}
+#page-container header.et-fixed-header{background-color:#FFF;}
+.et_overlay{position: static;}
+.services-list ul li{
+    margin: 26px 0;font-size: 18px;font-weight: 700;list-style: none;position: relative;
+}
+.services-list ul li::before{
+    content: "";
+    width: 12px;height: 12px;background: #7dcbbd;
+    position: absolute;
+    left: -30px;
+    top: 6px;
+    border-radius: 12px;
+}
