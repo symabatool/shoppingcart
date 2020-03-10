@@ -9,51 +9,153 @@ License: GNU General Public License v2
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Text Domain: Divi-Child
 */
-.main-banner .et_pb_container{height:80vh !important;}
-.main-banner .et_pb_container .et_pb_button_wrapper{position: relative;}
-.main-banner .et_pb_container .et_pb_button{position: absolute;top: 150px;text-transform: uppercase;padding: 15px 30px;box-sizing: border-box;right: -170px;}
-#top-menu-nav #top-menu li{padding-right:45px;margin-top: 10px;}
-#et-top-navigation #et_top_search{width: 160px;margin-top:0;border:1px solid #aaa;padding:5px 10px}
-#et-top-navigation #et_top_search:before {content: "Search";}
-#et-top-navigation #et_top_search #et_search_icon:before{right: 7px;left: auto;top: 8px;font-size: 14px;font-weight: 700;}
-#page-container header.et-fixed-header{background-color:#FFF;}
-.et_overlay{position: static;}
-.services-list ul li{
-    margin: 26px 0;font-size: 18px;font-weight: 700;list-style: none;position: relative;
+
+.main-banner .et_pb_container {
+    height: 80vh !important;
 }
-.services-list ul li::before{
+
+.main-banner .et_pb_container .et_pb_button_wrapper {
+    position: relative;
+}
+
+.main-banner .et_pb_container .et_pb_button {
+    position: absolute;
+    top: 150px;
+    text-transform: uppercase;
+    padding: 15px 30px;
+    box-sizing: border-box;
+    right: -170px;
+}
+
+#top-menu-nav #top-menu li {
+    padding-right: 45px;
+    margin-top: 10px;
+}
+
+#et-top-navigation #et_top_search {
+    width: 160px;
+    margin-top: 0;
+    border: 1px solid #aaa;
+    padding: 5px 10px
+}
+
+#et-top-navigation #et_top_search:before {
+    content: "Sssearch";
+}
+
+#et-top-navigation #et_top_search #et_search_icon:before {
+    right: 7px;
+    left: auto;
+    top: 8px;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+#page-container header.et-fixed-header {
+    background-color: #FFF;
+}
+
+.et_overlay {
+    position: static;
+}
+
+.services-list ul li {
+    margin: 26px 0;
+    font-size: 18px;
+    font-weight: 700;
+    list-style: none;
+    position: relative;
+}
+
+.services-list ul li::before {
     content: "";
-    width: 12px;height: 12px;background: #7dcbbd;
+    width: 12px;
+    height: 12px;
+    background: #7dcbbd;
     position: absolute;
     left: -30px;
     top: 6px;
     border-radius: 12px;
 }
-.section-musicom-list .container{
+
+.section-musicom-list .container {
     padding: 5% 0;
 }
+
 .section-musicom-list .row {
     display: flex;
     flex-wrap: wrap;
 }
+
 .section-musicom-list .row .two-col {
     width: 46%;
     padding: 5%;
     margin: 0 2%;
     box-sizing: border-box;
     border: 1px solid #dfdfdf;
-    box-shadow: 0 10px 35px -15px rgba(0,0,0,0.3);
+    box-shadow: 0 10px 35px -15px rgba(0, 0, 0, 0.3);
 }
+
 .section-musicom-list .row .two-col .title {
     font-size: 32px;
     text-transform: uppercase;
     margin-bottom: 20px;
 }
-.section-musicom-list .row .two-col .content{
+
+.section-musicom-list .row .two-col .content {
     font-size: 14px;
     line-height: 1.8;
 }
-.section-musicom-list .row .two-col .read-more{
+
+.section-musicom-list .row .two-col .read-more {
+    background: #c82226;
+    color: #fff;
+    padding: 3px 30px;
+    margin-top: 20px;
+    float: left;
+    font-size: 16px;
+    border-radius: 42px;
+}
+
+et_header_style_left #et-top-navigation nav>ul>li>a,
+{
+    padding-bottom: 0px;
+}
+
+.section-musicom-list .container {
+    padding: 5% 0;
+}
+
+body #main-content .container:before {
+    content: none;
+}
+
+.section-musicom-list .row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.section-musicom-list .row .two-col {
+    width: 46%;
+    padding: 5%;
+    margin: 0 2%;
+    box-sizing: border-box;
+    border: 1px solid #dfdfdf;
+    box-shadow: 0 10px 35px -15px rgba(0, 0, 0, 0.3);
+}
+
+.section-musicom-list .row .two-col .title {
+    font-size: 32px;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+.section-musicom-list .row .two-col .content {
+    font-size: 14px;
+    line-height: 1.8;
+}
+
+.section-musicom-list .row .two-col .read-more {
     background: #c82226;
     color: #fff;
     padding: 3px 30px;

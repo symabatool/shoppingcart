@@ -1,22 +1,23 @@
 <?php get_header();?>
-<div id="main-content" class="section-samsmusic-list">
+<div id="main-content" class="section-musicom-list">
 	<div class="container">
 		<div id="content-area" class="clearfix">
         <?php
-            if(have_posts()) :
-                while(have_posts()) : the_post(); ?> 
+            if(have_posts()) :?>
+            <div class="row">
+                <?php while(have_posts()) : the_post(); ?> 
                     <div class="two-col">
                        <h2 class="title">
                         <?php the_title(); ?>
                        </h2>
-                        <p class="content">
-                        <?php the_content(); ?>
-                        </p>
-                        <a href="<?php the_permalink()?>">Read More</a>
+                        <div class="content">
+                        <?php the_excerpt(); ?>
+                        </div>
+                        <a href="<?php the_permalink()?>" class="read-more">Read More</a>
                     </div>
-            <?php
-                endwhile; 
-            endif; ?>
+                <?php endwhile; ?>
+            </div>
+            <?php endif; ?>
         </div>
     </div>
 </div>
