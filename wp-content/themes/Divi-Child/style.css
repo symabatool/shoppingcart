@@ -28,8 +28,11 @@ Text Domain: Divi-Child
 }
 
 #top-menu-nav #top-menu li {
-    padding-right: 45px;
-    margin-top: 10px;
+    padding-right: 5px;
+    margin-top: 1px;
+    box-sizing: border-box;
+    border: 2px solid red;
+    background-color: #aaa;
 }
 
 #et-top-navigation #et_top_search {
@@ -40,7 +43,7 @@ Text Domain: Divi-Child
 }
 
 #et-top-navigation #et_top_search:before {
-    content: "Sssearch";
+    content: "Search";
 }
 
 #et-top-navigation #et_top_search #et_search_icon:before {
@@ -78,16 +81,16 @@ Text Domain: Divi-Child
     border-radius: 12px;
 }
 
-.section-musicom-list .container {
+.section-samsmusic-list .container {
     padding: 5% 0;
 }
 
-.section-musicom-list .row {
+.section-samsmusic-list .row {
     display: flex;
     flex-wrap: wrap;
 }
 
-.section-musicom-list .row .two-col {
+.section-samsmusic-list .row .two-col {
     width: 46%;
     padding: 5%;
     margin: 0 2%;
@@ -96,18 +99,18 @@ Text Domain: Divi-Child
     box-shadow: 0 10px 35px -15px rgba(0, 0, 0, 0.3);
 }
 
-.section-musicom-list .row .two-col .title {
+.section-samsmusic-list .row .two-col .title {
     font-size: 32px;
     text-transform: uppercase;
     margin-bottom: 20px;
 }
 
-.section-musicom-list .row .two-col .content {
+.section-samsmusic-list .row .two-col .content {
     font-size: 14px;
     line-height: 1.8;
 }
 
-.section-musicom-list .row .two-col .read-more {
+.section-samsmusic-list .row .two-col .read-more {
     background: #c82226;
     color: #fff;
     padding: 3px 30px;
@@ -122,7 +125,7 @@ et_header_style_left #et-top-navigation nav>ul>li>a,
     padding-bottom: 0px;
 }
 
-.section-musicom-list .container {
+.section-samsmusic-list .container {
     padding: 5% 0;
 }
 
@@ -130,12 +133,12 @@ body #main-content .container:before {
     content: none;
 }
 
-.section-musicom-list .row {
+.section-samsmusic-list .row {
     display: flex;
     flex-wrap: wrap;
 }
 
-.section-musicom-list .row .two-col {
+.section-samsmusic-list .row .two-col {
     width: 46%;
     padding: 5%;
     margin: 0 2%;
@@ -144,18 +147,18 @@ body #main-content .container:before {
     box-shadow: 0 10px 35px -15px rgba(0, 0, 0, 0.3);
 }
 
-.section-musicom-list .row .two-col .title {
+.section-samsmusic-list .row .two-col .title {
     font-size: 32px;
     text-transform: uppercase;
     margin-bottom: 20px;
 }
 
-.section-musicom-list .row .two-col .content {
+.section-samsmusic-list .row .two-col .content {
     font-size: 14px;
     line-height: 1.8;
 }
 
-.section-musicom-list .row .two-col .read-more {
+.section-samsmusic-list .row .two-col .read-more {
     background: #c82226;
     color: #fff;
     padding: 3px 30px;
