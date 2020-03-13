@@ -48,13 +48,13 @@ add_shortcode( 'show_latest_look_book', 'display_custom_post_type' );
         }
         wp_reset_postdata();
         return $string;
-        register_taxonomy('singers',array('samsmusic'), array(
-            'hierarchical' => true,
+                    register_taxonomy('singers',array('samsmusic'), array(
+'hierarchical' => true,
             'labels' => $labels,
             'show_ui' => true,
             'show_admin_column' => true,
             'query_var' => true,
-            'rewrite' => array( 'slug' => 'singers	' ),
+            'rewrite' => array( 'slug' => 'singers' ),
           ));
          
         }
