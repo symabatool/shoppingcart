@@ -9,7 +9,7 @@ get_header();
 		$audio = get_field("upload_audio");
 		$singerName = get_field("singer_name");
 		$singerBio = get_field("singer_bio");
-		$singerpic = get_field("profile_image");
+		$singerpic = get_field("singer_image");
 		?>
 
 		<article id="post-<?php the_ID(); ?>">
@@ -25,7 +25,7 @@ get_header();
 			</audio>
 			</div> <!-- .entry-content -->
 			<div class="singer-details">
-				<img src="<?php echo $singerpic; ?>" alt="Singer Profile Image">
+				<img src="<?php echo $singerpic; ?>" alt="Singer Image">
 				<h3 class="singer-name">
 					<?php echo $singerName; ?>
 				</h3>
