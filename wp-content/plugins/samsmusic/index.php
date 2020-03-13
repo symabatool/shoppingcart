@@ -94,7 +94,7 @@ function create_singers_taxonomy() {
     'show_ui' => true,
     'show_admin_column' => true,
     'query_var' => true,
-    'rewrite' => array( 'slug' => 'singers	' ),
+    'rewrite' => array( 'slug' => 'singers' ),
   ));
  
 }
