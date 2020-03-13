@@ -13,6 +13,9 @@
                         <div class="content">
                         <?php the_excerpt(); ?>
                         </div>
+						<audio controls>
+				<source src="<?php echo $audio?>">
+			</audio>
                         <a href="<?php the_permalink()?>" class="read-more">Read More</a>
                     </div>
                 <?php endwhile; ?>

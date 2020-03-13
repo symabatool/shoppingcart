@@ -54,7 +54,7 @@ add_shortcode( 'show_latest_look_book', 'display_custom_post_type' );
             'show_ui' => true,
             'show_admin_column' => true,
             'query_var' => true,
-            'rewrite' => array( 'slug' => 'singers	' ),
+            'rewrite' => array( 'slug' => 'singers' ),
           ));
          
         }
