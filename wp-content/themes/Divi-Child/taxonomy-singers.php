@@ -1,3 +1,32 @@
+<<<<<<< HEAD
+<?php get_header();?>
+<div id="main-content" class="section-samsmusic-list">
+	<div class="container">
+		<div id="content-area" class="clearfix">
+        <?php
+            if(have_posts()) :?>
+            <div class="row">
+                <?php while(have_posts()) : the_post(); ?> 
+                    <div class="two-col">
+                       <h2 class="title">
+                        <?php the_title(); ?>
+                       </h2>
+                        <div class="content">
+                        <?php the_excerpt(); ?>
+                        </div>
+						<audio controls>
+				<source src="<?php echo $audio?>">
+			</audio>
+                        <a href="<?php the_permalink()?>" class="read-more">Read More</a>
+                    </div>
+                <?php endwhile; ?>
+            </div>
+            <?php endif; ?>
+        </div>
+    </div>
+</div>
+<?php get_footer(); ?>
+=======
 <?php
 get_header();
 ?>
@@ -47,3 +76,4 @@ get_footer();
 		
 	)
 }
+>>>>>>> cb01928402f18947d5a04737c085598db02299d3

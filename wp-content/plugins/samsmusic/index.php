@@ -99,4 +99,45 @@ function create_singers_taxonomy() {
   
  
 }
+function team_shortcode_ss($atts){
+
+    $atts = shortcode_atts(
+        array(
+            'id'  => false,
+        ),
+        $atts,
+        'team_shortcode_ss'
+    );
+	ob_start();
+    $query = new WP_Query( array(
+        'post_type' => 'samsmusic',
+        'posts_per_page' => 1,
+        'order' => 'ASC',
+        'orderby' => 'date',
+    ) );
+	
+	$count = $query->post_count;
+	
+    if ( $query->have_posts() ) { ?>
+       <ul class="team-members-list">
+            <?php while ( $query->have_posts() ) : $query->the_post(); ?>
+                <li class="team-list">
+					<div class="image-container">
+                  		  <?php echo get_the_post_thumbnail();?>
+					</div>
+                    <h3> <?php the_title();?></h3>
+                    <p><?php the_content();?></p>
+                </li>     
+            
+            <?php $class == 'left' ? $class = 'right' : $class = 'left';$i++;?>
+            <?php endwhile;
+            wp_reset_postdata(); ?>
+    </ul>
+    <?php
+	$data = ob_get_clean();
+    return $data;
+	}
+}
+ 
+add_shortcode('team-timeline_ss','team_shortcode_ss');
    ?>
