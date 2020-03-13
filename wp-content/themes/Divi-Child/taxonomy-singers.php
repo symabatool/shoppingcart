@@ -43,24 +43,7 @@ get_header();
 <?php
 get_footer();
 ?>
-function callback_recent_audio(){
-	$Audio= array(
-		"post_type" => "samsmusic",	
-		"order_by" => "id"
-		"order" => "DESC"
-		"post_per_page" => "2"
-		query = new wp_query($Audio);
-		$html = "";
-		if ($query-> have post()
-	        )://:={(end if; //end if=)
 
-			}
-			While($ query-> have post()):
-			$ html .="<h2>".the title()
-			endif ;// endif=}
-			return $html
-
-		
 		
 	)
 }

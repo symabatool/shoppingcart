@@ -96,6 +96,7 @@ function create_singers_taxonomy() {
     'query_var' => true,
     'rewrite' => array( 'slug' => 'singers' ),
   ));
+  
  
 }
    ?>
