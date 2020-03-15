@@ -14,9 +14,13 @@
                         <div class="content">
                         <?php the_excerpt(); ?>
                         </div>
-						<audio controls>
+						<div class="audio"><audio controls>
 				<source src="<?php echo $audio?>">
-			</audio>
+			    </audio>
+			</div>
+			<div class="content">
+                        <?php the_excerpt(); ?>
+                        </div>
                         <a href="<?php the_permalink()?>" class="read-more">Read More</a>
                     </div>
                 <?php endwhile; ?>
@@ -26,9 +30,8 @@
     </div>
 </div>
 <?php get_footer(); ?>
-=======
 <?php
-get_header();
+get_header( ) ;
 ?>
 <div id="main-content" class="section-samsmusic-list">
 	<div class="container">
@@ -72,8 +75,3 @@ get_header();
 <?php
 get_footer();
 ?>
-
-		
-	)
-}
->>>>>>> cb01928402f18947d5a04737c085598db02299d3

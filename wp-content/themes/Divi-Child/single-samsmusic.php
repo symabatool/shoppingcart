@@ -9,7 +9,8 @@ get_header();
 		$audio = get_field("upload_audio");
 		$singerName = get_field("singer_name");
 		$singerBio = get_field("singer_bio");
-		$singerpic = get_field("profile_image");
+		$singerpic = get_field("singer_image");
+		$audio = get_field("singer_audio");
 		?>
 
 		<article id="post-<?php the_ID(); ?>">

@@ -1,0 +1,8 @@
+2020-03-13T20:37:25+00:00 CRITICAL Uncaught Error: Call to undefined function the_image() in C:\xampp\htdocs\shoppingcart\wp-content\themes\Divi-Child\taxonomy-singers.php:22
+Stack trace:
+#0 C:\xampp\htdocs\shoppingcart\wp-includes\template-loader.php(98): include()
+#1 C:\xampp\htdocs\shoppingcart\wp-blog-header.php(19): require_once('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\shoppingcart\index.php(17): require('C:\\xampp\\htdocs...')
+#3 {main}
+  thrown in C:\xampp\htdocs\shoppingcart\wp-content\themes\Divi-Child\taxonomy-singers.php on line 22
+

@@ -99,14 +99,38 @@ function create_singers_taxonomy() {
   
  
 }
-function team_shortcode_ss($atts){
+function callback_recent_audio (){
+    $Audio = array(
+        "Post_type" => "samsmusic",
+        "order_by" => "id",
+        "Order" => "Decs",
+        "Post_per_page" => "-1",
+        "Post_type" => "samsmusic",
+        $query = new Wp_query ("$ audio")
+    )
+        $html = "";
+
+	if($query->have_posts()) : // : = { 
+		while($query->have_posts()) : ($query->the_post());
+			$html .= "<h2>".get_the_title()."</h2>"; 
+			$html .= "<p>".get_the_content()."</p>"; 
+		endwhile;
+	endif; // endif = }
+    return $html;
+    "Print_recent_Audio_singer" ="Atif"
+
+   add_shortcode("print_recent_audio" , "callback_recent_audio");
+
+    
+}
+function samsmusic_singers_2($atts){
 
     $atts = shortcode_atts(
         array(
             'id'  => false,
         ),
         $atts,
-        'team_shortcode_ss'
+        'samsmusic_singers_2'
     );
 	ob_start();
     $query = new WP_Query( array(
@@ -139,5 +163,4 @@ function team_shortcode_ss($atts){
 	}
 }
  
-add_shortcode('team-timeline_ss','team_shortcode_ss');
-   ?>
+add_shortcode('samsmusic','samsmusic_singers_2');
